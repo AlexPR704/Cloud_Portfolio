@@ -2,9 +2,8 @@ name: Lambda Test Workflow
 
 on:
   push:
-    paths:
-      - 'terraform/lambda/**'
-      - '.github/workflows/python-app.yml'
+    branches:
+      - main # Any push to main triggers the workflow; no matter which files changed.
 
 jobs:
   test:

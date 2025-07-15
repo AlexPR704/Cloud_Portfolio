@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alexander Garcia - Cloud Resume</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1>Hi, I’m Alexander.</h1>
+      <p>My résumé has been seen by <span id="visit-count">...</span> very curious humans.</p>
+      <p>Don’t worry—it's powered by AWS.</p>
+    </section>
+    <header>
+      <h1>Alexander Garcia</h1>
+      <p><i class="fas fa-envelope"></i> alexg97343@gmail.com | <i class="fas fa-phone"></i> (980) 365-1554</p>
+      <p>
+        <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/alexanderggarcia/">LinkedIn</a> |
+        <i class="fas fa-globe"></i> <a href="https://alexpr704.github.io/AlexanderGarcia.github.io/">Portfolio</a>
+      </p>
+    </header>
+
+    <section>
+      <h2>Education & Certifications</h2>
+      <ul>
+        <li><strong>AWS Certified Cloud Practitioner</strong> — Amazon Web Services, Orlando, FL <br> <span class="date">Expected: June 2025</span></li>
+        <li><strong>UNCC Full Stack Web Development Boot Camp</strong> — Charlotte, NC <br> <span class="date">Graduated: April 2020</span></li>
+        <li><strong>Google Data Analytics Certificate</strong> — Coursera (Remote) <br> <span class="date">Issued: November 2021</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <div class="job">
+        <h3>Enterprise BI Analyst 3 – Comcast <span class="location">Remote</span></h3>
+        <span class="date">Aug 2022 – Present</span>
+        <ul>
+          <li>Develop Tableau & Power BI dashboards to boost data-driven decisions.</li>
+          <li>Design targeted reports to streamline strategic project execution.</li>
+          <li>Conduct data audits to ensure integrity and reduce reporting errors.</li>
+          <li>Analyze operational data to reduce costs and improve efficiency.</li>
+          <li>Led ETL processes to clean and structure large-scale datasets.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Data Analyst – Spectrum <span class="location">Charlotte, NC</span></h3>
+        <span class="date">Mar 2022 – Aug 2022</span>
+        <ul>
+          <li>Merged datasets from multiple sources to improve reporting accuracy.</li>
+          <li>Resolved data anomalies by troubleshooting and correcting merged records.</li>
+          <li>Performed UAT testing for robust system deployment.</li>
+          <li>Created stakeholder reports to support strategic decision-making.</li>
+          <li>Validated MDM tool accuracy using Teradata, Oracle, and Excel.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Web Quality Analyst – Townsquare Interactive <span class="location">Charlotte, NC</span></h3>
+        <span class="date">Jan 2021 – Mar 2022</span>
+        <ul>
+          <li>Performed QA testing to ensure seamless cross-platform website performance.</li>
+          <li>Collaborated with developers to diagnose and resolve bugs.</li>
+          <li>Monitored web metrics to improve page speed and UX.</li>
+          <li>Provided UI/UX feedback based on data trends and analytics.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <p>
+        Tableau, SQL, Power BI, Looker, Docker, Apache Airflow, Python, Teradata, Oracle, GitHub, Data Modeling, ETL, Data Cleansing, Excel, R, Metadata, Presto, DBeaver, Data Ethics
+      </p>
+    </section>
+  </div>
+    <script>
+    fetch("https://ho63grfwr7.execute-api.us-east-1.amazonaws.com/IncrementVisitorCount")
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("visit-count").innerText = data.views;
+      })
+      .catch(err => {
+        console.error("Failed to load visitor count:", err);
+      });
+  </script>
+</body>
+</html>

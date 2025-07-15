@@ -12,7 +12,7 @@ Welcome! This is my end-to-end deployment of a cloud-native resume site built on
 - Fully version-controlled repo
 
 ## Why I Built This
-This project was part of the [Cloud Resume Challenge](https://cloudresumechallenge.dev) to strengthen my cloud engineering skills. I wanted to create a production-grade setup using best practices in automation, testing, and security.
+This project was part of the [Cloud Resume Challenge](https://cloudresumechallenge.dev) with a twist to strengthen my cloud engineering skills. I wanted to create a production-grade setup using best practices in automation, testing, and security.
 
 ## Live Demo
 👉 [alexander-resume-site.com](https://d17qrlv1yga6q4.cloudfront.net)

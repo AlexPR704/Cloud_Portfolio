@@ -1,5 +1,6 @@
 # Cloud Resume Challenge - Build
 ![CI](https://github.com/AlexPR704/Cloud_Portfolio/actions/workflows/python-app.yml/badge.svg)
+![Frontend Deploy](https://github.com/AlexPR704/Cloud_Portfolio/actions/workflows/deploy-frontend.yml/badge.svg)
 
 Welcome! This is my end-to-end deployment of a cloud-native resume site built on AWS, using infrastructure as code, CI/CD, and Python-based Lambda for backend logic.
 
@@ -68,3 +69,8 @@ To run the tests locally with pytest:
 - pytest
 
 All test dependencies are managed via requirements.txt, and the tests automatically run on every GitHub push thanks to CI/CD integration.
+
+## What I Learned
+
+This project helped me go beyond basic cloud concepts and actually build something real! I got hands-on with AWS services like Lambda, DynamoDB, and API Gateway. I was able to learn how they fit together in a serverless setup. I also worked through troubleshooting IAM configs and getting CI/CD working in GitHub Actions. It pushed me to think like a cloud engineer, not just follow tutorials. I was  very excited to pass the AWS Cloud Practitioner certification but I knew I needed more. I wanted to understand the ins and outs.This challenge made it all click and drives me to want more. My goal is to become a Cloud or Data Engineer, and this definitely helped me get closer!
+

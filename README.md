@@ -20,19 +20,15 @@ This project was part of the [Cloud Resume Challenge](https://cloudresumechallen
 👉 [alexander-resume-site.com](https://d17qrlv1yga6q4.cloudfront.net)
 
 ## Repo Structure
-CloudResume/
-├── terraform/
-│   ├── lambda/
-│   │   ├── lambda_function.py        # AWS Lambda logic
-│   │   ├── requirements.txt          # Dependencies for testing and deployment
-│   │   ├── __init__.py               # Marks lambda/ as a Python module
-│   │   └── test_lambda/
-│   │       ├── test_handler.py       # Unit tests for Lambda function
-│   │       └── __init__.py           # Marks test_lambda/ as a Python module
-├── .github/
-│   └── workflows/
-│       └── python-app.yml            # GitHub Actions workflow for backend testing
-├── README.md                         # Project overview and showcase (this file)
+| Directory            | Purpose                            |
+|----------------------|-------------------------------------|
+| `terraform/`         | Infra as code for AWS provisioning |
+| `lambda/`            | Backend logic for visitor counter  |
+| `test_lambda/`       | Pytest-based unit tests            |
+| `.github/workflows/` | CI/CD workflows for backend + frontend |
+| `index.html`         | Static resume homepage             |
+| `style.css`          | Styling for resume site            |
+
 
 ## Tech Stack
 Technology: The purpose

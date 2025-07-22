@@ -1,150 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+/* Alexander Garcia Portfolio – Custom Styling for Twenty */
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: #f2f2f2;
-  line-height: 1.6;
-  animation: fadeInBody 1s ease-in;
-}
-
-@keyframes fadeInBody {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.container {
-  max-width: 900px;
-  margin: 40px auto;
-  background-color: #1201ff;
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
-  animation: slideUp 0.8s ease-out;
-}
-
-@keyframes slideUp {
-  from { transform: translateY(30px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-
-header {
+/* === Hero Gradient (Banner) === */
+#banner {
+  background-color: #4c0033; /* Deep maroon base */
+  background-image:
+    url("images/light-bl.svg"),
+    url("images/light-br.svg"),
+    url("images/overlay.png"),
+    linear-gradient(to right, #6f1d1b, #bb0a1e); /* Maroon to cherry red gradient */
+  background-size: 25em, 25em, auto, cover;
+  color: #ffffff;
+  padding: 6em 0;
   text-align: center;
-  margin-bottom: 30px;
-  animation: fadeInHeader 1.5s ease-in-out;
 }
 
-@keyframes fadeInHeader {
-  0% { opacity: 0; transform: scale(0.95); }
-  100% { opacity: 1; transform: scale(1); }
-}
-
-h1 {
-  margin-bottom: 10px;
-  font-size: 2.4em;
-  color: #61dafb;
-  letter-spacing: 1px;
-}
-
-a {
-  color: #79d0f1;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-a:hover {
-  color: #fca311;
-  text-decoration: underline;
-}
-
-h2 {
-  border-bottom: 2px solid #444;
-  padding-bottom: 6px;
-  margin-top: 30px;
-  color: #fca311;
-  animation: fadeInSection 1.2s ease forwards;
-}
-
-@keyframes fadeInSection {
-  from { opacity: 0; transform: translateX(-10px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
-.job {
-  background: #232931;
-  border-left: 4px solid #61dafb;
-  padding: 16px 20px;
+#banner .inner {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 3em;
   border-radius: 12px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: fadeInJob 1.3s ease;
 }
 
-@keyframes fadeInJob {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+#banner .inner h2 {
+  font-size: 2.5em;
+  font-weight: 900;
+  letter-spacing: 0.05em;
 }
 
-.job:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  border-left-color: #fca311;
+#banner .inner p {
+  font-size: 1.1em;
+  margin-top: 1em;
+  line-height: 1.6;
 }
 
-h3 {
-  margin: 10px 0 4px;
-  color: #f2f2f2;
+/* === Button Styling === */
+.button.primary {
+  background: #ffbb00;
+  border-color: #ffbb00;
+  color: #fff;
 }
 
-.location {
-  font-weight: normal;
-  color: #aaa;
-  font-style: italic;
+.button.primary:hover {
+  background: #ffc857;
+  border-color: #ffc857;
+  color: #fff;
 }
 
-.date {
-  font-size: 0.9em;
-  color: #aaa;
+/* === Projects Section === */
+.wrapper.style2 {
+  background: #f5f6fa;
+  color: #333;
+  padding: 4em 2em;
 }
 
-ul {
-  margin-left: 20px;
-  padding-left: 0;
+.wrapper.style2 h2 {
+  color: #6f1d1b;
+  font-size: 1.8em;
 }
 
-ul li {
-  margin-bottom: 6px;
+ul.featured-icons .icon {
+  color: #bb0a1e;
 }
 
-section {
-  margin-bottom: 25px;
+/* === Skills Section === */
+.wrapper.style3 {
+  background: #fff;
+  padding: 3em 2em;
 }
 
-p i, a i {
-  margin-right: 6px;
+.wrapper.style3 h2 {
+  color: #6f1d1b;
 }
 
-.skills p {
-  background-color: #2a2e38;
-  padding: 12px;
-  border-radius: 8px;
-  font-size: 0.95em;
+.wrapper.style3 ul {
+  font-size: 1em;
   line-height: 1.8;
-  color: #cdd3df;
-  animation: fadeInSection 1.5s ease;
 }
 
-#visit-count::after {
-  content: '|';
-  animation: blink 1s step-start infinite;
+/* === What I Learned Section === */
+.wrapper.style4 {
+  background: #fff9f0;
+  border-left: 8px solid #ffbb00;
+  padding: 3em;
+  font-style: italic;
+  color: #333;
 }
 
-@keyframes blink {
-  50% { opacity: 0; }
+/* === CTA Visitor Counter === */
+#cta {
+  background-color: #4c0033;
+  background-image:
+    url("images/light-tl.svg"),
+    url("images/light-tr.svg"),
+    url("images/overlay.png"),
+    linear-gradient(to right, #6f1d1b, #bb0a1e);
+  background-size: 25em, 25em, auto, cover;
+  text-align: center;
+  color: #fff;
+  padding: 4em 2em;
+}
+
+#cta h2 {
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+#visit-count {
+  font-weight: bold;
+  color: #ffbb00;
+}
+
+/* === Footer Styling === */
+#footer {
+  background: #222;
+  color: #eee;
+  padding: 4em 2em;
+  text-align: center;
+}
+
+#footer a {
+  color: #ffbb00;
 }

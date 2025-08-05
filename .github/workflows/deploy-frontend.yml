@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - 'index.html'
-      - 'style.css'
+      - 'assets/css/main.css'
 
 jobs:
   deploy:
@@ -23,7 +23,7 @@ jobs:
         aws-region: us-east-1  # update if needed
 
     - name: Sync to S3
-      run: aws s3 sync ./ s3://alexander-cloud-resume --exclude "*" --include "index.html" --include "style.css" --delete
+      run: aws s3 sync ./ s3://alexander-cloud-resume --exclude "*" --include "index.html" --include "assets/css/main.css" --delete
 
     - name: Invalidate CloudFront cache
       run: aws cloudfront create-invalidation --distribution-id E2186GN9SLHESY --paths "/*"
